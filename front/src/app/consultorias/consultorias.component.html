@@ -1,0 +1,27 @@
+<div class="list row">
+  <div class="col-md-6">
+    <h4>Consultorias</h4>
+    <ul class="list-group">
+      <li
+        class="list-group-item"
+        *ngFor="let consultoria of consultorias; let i = index"
+        [class.active]="i == currentIndex"
+        (click)="setActiveConsultoria(consultoria, i)"
+      >
+        {{ consultoria.nome }}
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <div *ngIf="currentConsultorias">
+      <h4>Consultoria</h4>
+      <div>
+        <label><strong>Nome:</strong></label> {{ currentConsultorias.nome }}
+      </div>
+      <div>
+        <label><strong>Descrição:</strong></label>
+        {{ currentConsultorias.cnpj }}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="list row">
+  <div class="col-md-6">
+    <h4>Normas</h4>
+    <ul class="list-group">
+      <li
+        class="list-group-item"
+        *ngFor="let norma of normas; let i = index"
+        [class.active]="i == currentIndex"
+        (click)="setActiveNormas(norma, i)"
+      >
+        {{ norma.nome }}
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <div *ngIf="currentNormas">
+      <h4>Norma</h4>
+      <div>
+        <label><strong>Nome:</strong></label> {{ currentNormas.nome }}
+      </div>
+      <div>
+        <label><strong>Descrição:</strong></label>
+        {{ currentNormas.descricao }}
+      </div>
+      <div>
+        <label><strong>Área:</strong></label>
+        {{ currentNormas.area }}
+      </div>
+    </div>
+  </div>
+</div>
