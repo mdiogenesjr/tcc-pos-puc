@@ -52,7 +52,7 @@ public class GestaoController {
     private void publicarNoTopico(Processo processo) throws URISyntaxException {
         RestTemplate restTemplate = new RestTemplate();
 
-        String baseUrl = "http://127.0.0.1:8082/topics/agendar-etapa-processo";
+        String baseUrl = "http://2-start-kafka_kafka-cluster_1:8082/topics/agendar-etapa-processo";
         URI uri = new URI(baseUrl);
 
         HttpHeaders headers = new HttpHeaders();

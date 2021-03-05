@@ -1,4 +1,3 @@
-net\techtter\springkafkadocker\springkafkadockerint\controller\LegadoController.class
 net\techtter\springkafkadocker\springkafkadockerint\model\LoginDto.class
 net\techtter\springkafkadocker\springkafkadockerint\SpringKafkaDockerIntApplication.class
 net\techtter\springkafkadocker\springkafkadockerint\model\Record.class
@@ -11,7 +10,6 @@ net\techtter\springkafkadocker\springkafkadockerint\model\TokenResponse.class
 net\techtter\springkafkadocker\springkafkadockerint\producer\KafkaProducer.class
 net\techtter\springkafkadocker\springkafkadockerint\config\TokenService.class
 net\techtter\springkafkadocker\springkafkadockerint\controller\ConsultoriasController.class
-net\techtter\springkafkadocker\springkafkadockerint\consumer\KafkaConsumer.class
 net\techtter\springkafkadocker\springkafkadockerint\consumer\LegadoKafkaConsumer.class
 net\techtter\springkafkadocker\springkafkadockerint\model\TokenResponse$TokenResponseBuilder.class
 net\techtter\springkafkadocker\springkafkadockerint\controller\AutenticacaoController.class
