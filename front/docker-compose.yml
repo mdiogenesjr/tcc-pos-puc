@@ -2,8 +2,12 @@ version: '3.4'
 
 services:
   tcc-pos-angular:
-    image: mdiogenes001/tcc-pos-angular:0.3
+    image: mdiogenes001/tcc-pos-angular:0.4
     container_name: tcc-pos-angular
     build: .
     ports:
       - 8090:80
+networks:
+  default:
+    external:
+      name: tcc-pos-net
