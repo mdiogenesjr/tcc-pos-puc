@@ -2,8 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
-const urlProcesso = 'http://localhost:8089/processo';
-const urlProcessoAgendamento = 'http://localhost:8089/processo/agendar-etapa-processo';
+const urlProcesso = 'http://ec2-54-163-28-147.compute-1.amazonaws.com:8089/processo';
+const urlProcessoAgendamento = 'http://ec2-54-163-28-147.compute-1.amazonaws.com:8089/processo/agendar-etapa-processo';
 
 @Injectable({
   providedIn: 'root'
