@@ -4,7 +4,7 @@ import { tap } from 'rxjs/operators';
 import { UserService } from '../user/user.service';
 
 
-const API_URL = 'http://localhost:8089';
+const API_URL = 'http://tcc-pos:8089';
 
 @Injectable({
   providedIn: 'root'
