@@ -19,11 +19,11 @@ import java.util.List;
 @RestController
 public class GestaoController {
 
-    @PostMapping(value = "processo/agendar-etapa-processo")
+    @GetMapping(value = "processo/agendar-etapa-processo")
     public ResponseEntity<String> agendarEtapaProcesso(@RequestBody Processo processo
                                                        ) throws IOException, URISyntaxException {
 
-        //publicarNoTopico(processo);
+        publicarNoTopico(processo);
 
         return ResponseEntity.status(HttpStatus.OK).body("{\n" +
                 "   \"status\":\"processo agendado\"\n" +
