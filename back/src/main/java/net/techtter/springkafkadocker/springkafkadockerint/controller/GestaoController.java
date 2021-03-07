@@ -23,7 +23,7 @@ public class GestaoController {
     public ResponseEntity<String> agendarEtapaProcesso(@RequestBody Processo processo
                                                        ) throws IOException, URISyntaxException {
 
-        publicarNoTopico(processo);
+        //publicarNoTopico(processo);
 
         return ResponseEntity.status(HttpStatus.OK).body("{\n" +
                 "   \"status\":\"processo agendado\"\n" +
