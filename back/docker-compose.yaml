@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   tcc-pos:
-    image: mdiogenes001/tcc-pos:0.13
+    image: mdiogenes001/tcc-pos:0.14
     container_name: tcc-pos
     hostname: tcc-pos
     build: .
