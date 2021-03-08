@@ -62,7 +62,7 @@ public class GestaoController {
         RequestRestProxy restProxy = new RequestRestProxy();
         List<Record> records = new ArrayList<>();
         Record record = new Record();
-        record.setValue(String.valueOf(processo.getIdProcesso()) + " Agendado.");
+        record.setValue("{\"Processo\" : "+processo.getIdProcesso()+",\"Etapa\" : "+processo.getIdEtapa()+"}");
         records.add(record);
         restProxy.setRecords(records);
 
