@@ -1,8 +1,11 @@
 package net.techtter.springkafkadocker.springkafkadockerint.controller;
 
+import net.techtter.springkafkadocker.springkafkadockerint.config.TokenService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
@@ -10,8 +13,16 @@ import java.io.IOException;
 @RestController
 public class ConsultoriasController {
 
+    @Autowired
+    private TokenService tokenService;
+
     @GetMapping(value = "/consultorias")
-    public ResponseEntity<String> obter() throws IOException {
+    public ResponseEntity<String> obter(@RequestHeader("Authorization") String token) throws IOException {
+        if(!tokenService.isTokenValido(token)){
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("{\n" +
+                    "   \"status\":\"Token inválido\"\n" +
+                    "}");
+        }
         return ResponseEntity.status(HttpStatus.OK).body("[" +
                 "{" +
                 "\"id\": 1," +

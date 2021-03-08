@@ -1,8 +1,10 @@
 package net.techtter.springkafkadocker.springkafkadockerint.controller;
 
+import net.techtter.springkafkadocker.springkafkadockerint.config.TokenService;
 import net.techtter.springkafkadocker.springkafkadockerint.model.Processo;
 import net.techtter.springkafkadocker.springkafkadockerint.model.Record;
 import net.techtter.springkafkadocker.springkafkadockerint.model.RequestRestProxy;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -10,6 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
+import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -19,10 +22,18 @@ import java.util.List;
 @RestController
 public class GestaoController {
 
-    @PostMapping(value = "processo/agendar-etapa-processo")
-    public ResponseEntity<String> agendarEtapaProcesso(@RequestBody Processo processo
-                                                       ) throws IOException, URISyntaxException {
+    @Autowired
+    private TokenService tokenService;
 
+    @PostMapping(value = "processo/agendar-etapa-processo")
+    public ResponseEntity<String> agendarEtapaProcesso(@RequestBody Processo processo,
+                                                       @RequestHeader("Authorization") String token
+                                                       ) throws IOException, URISyntaxException {
+        if(!tokenService.isTokenValido(token)){
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("{\n" +
+                    "   \"status\":\"Token inválido\"\n" +
+                    "}");
+        }
         publicarNoTopico(processo);
 
         return ResponseEntity.status(HttpStatus.OK).body("{\n" +
@@ -31,7 +42,14 @@ public class GestaoController {
     }
 
     @GetMapping(value = "processo")
-    public ResponseEntity<String> obterProcesso() throws IOException, URISyntaxException {
+    public ResponseEntity<String> obterProcesso(
+            @RequestHeader("Authorization") String token) throws IOException, URISyntaxException {
+
+        if(!tokenService.isTokenValido(token)){
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("{\n" +
+                    "   \"status\":\"Token inválido\"\n" +
+                    "}");
+        }
 
         return ResponseEntity.status(HttpStatus.OK).body("[" +
                 "{" +

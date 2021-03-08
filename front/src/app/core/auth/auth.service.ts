@@ -15,7 +15,7 @@ export class AuthService {
     private http: HttpClient,
     private userService: UserService) { }
 
-  authenticate(userName: string, password: string) {
+  authenticate(userName: string, password: string) { 
 
     return this.http
       .post( 
