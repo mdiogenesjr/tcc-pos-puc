@@ -14,11 +14,11 @@ public class KafkaController {
         this.producer = producer;
     }
 
-    @PostMapping("/publish")
+   /* @PostMapping("/publish")
     public void writeMessageToTopic(@RequestParam("message") String message){
         this.producer.writeMessage("my_topic",message);
 
-    }
+    }*/
 
 }
 

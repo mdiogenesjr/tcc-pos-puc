@@ -30,17 +30,6 @@ public class GestaoController {
                 "}");
     }
 
-    @GetMapping(value = "processo/agendar-etapa-processo2")
-    public ResponseEntity<String> agendarEtapaProcesso2(@RequestBody Processo processo
-    ) throws IOException, URISyntaxException {
-
-        //publicarNoTopico(processo);
-
-        return ResponseEntity.status(HttpStatus.OK).body("{\n" +
-                "   \"status\":\"processo agendado\"\n" +
-                "}");
-    }
-
     @GetMapping(value = "processo")
     public ResponseEntity<String> obterProcesso() throws IOException, URISyntaxException {
 
