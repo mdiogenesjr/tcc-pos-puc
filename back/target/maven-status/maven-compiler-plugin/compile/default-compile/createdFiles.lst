@@ -9,6 +9,7 @@ net\techtter\springkafkadocker\springkafkadockerint\model\TokenDto.class
 net\techtter\springkafkadocker\springkafkadockerint\model\TokenResponse.class
 net\techtter\springkafkadocker\springkafkadockerint\producer\KafkaProducer.class
 net\techtter\springkafkadocker\springkafkadockerint\config\TokenService.class
+net\techtter\springkafkadocker\springkafkadockerint\config\WebSecurityConfig.class
 net\techtter\springkafkadocker\springkafkadockerint\config\SwaggerConfig.class
 net\techtter\springkafkadocker\springkafkadockerint\controller\ConsultoriasController.class
 net\techtter\springkafkadocker\springkafkadockerint\consumer\LegadoKafkaConsumer.class

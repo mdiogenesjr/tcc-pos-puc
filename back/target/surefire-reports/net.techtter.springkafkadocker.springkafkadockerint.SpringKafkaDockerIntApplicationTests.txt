@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: net.techtter.springkafkadocker.springkafkadockerint.SpringKafkaDockerIntApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.928 s - in net.techtter.springkafkadocker.springkafkadockerint.SpringKafkaDockerIntApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.399 s - in net.techtter.springkafkadocker.springkafkadockerint.SpringKafkaDockerIntApplicationTests
