@@ -9,6 +9,7 @@ C:\projetos\tcc-pos-puc\back\src\main\java\net\techtter\springkafkadocker\spring
 C:\projetos\tcc-pos-puc\back\src\main\java\net\techtter\springkafkadocker\springkafkadockerint\model\Record.java
 C:\projetos\tcc-pos-puc\back\src\main\java\net\techtter\springkafkadocker\springkafkadockerint\model\TokenDto.java
 C:\projetos\tcc-pos-puc\back\src\main\java\net\techtter\springkafkadocker\springkafkadockerint\controller\ConsultoriasController.java
+C:\projetos\tcc-pos-puc\back\src\main\java\net\techtter\springkafkadocker\springkafkadockerint\config\SwaggerConfig.java
 C:\projetos\tcc-pos-puc\back\src\main\java\net\techtter\springkafkadocker\springkafkadockerint\model\TokenResponse.java
 C:\projetos\tcc-pos-puc\back\src\main\java\net\techtter\springkafkadocker\springkafkadockerint\model\Processo.java
 C:\projetos\tcc-pos-puc\back\src\main\java\net\techtter\springkafkadocker\springkafkadockerint\producer\KafkaProducer.java
