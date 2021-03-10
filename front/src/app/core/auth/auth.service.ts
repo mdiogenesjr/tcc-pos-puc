@@ -4,7 +4,7 @@ import { tap } from 'rxjs/operators';
 import { UserService } from '../user/user.service';
 
 
-const API_URL = 'http://tcc-pos-alb-1565863230.us-east-1.elb.amazonaws.com:8089';
+const API_URL = 'http://localhost:8089';
 
 @Injectable({
   providedIn: 'root'
