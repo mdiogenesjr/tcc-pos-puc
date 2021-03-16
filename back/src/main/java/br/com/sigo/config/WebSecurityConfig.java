@@ -40,9 +40,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         web.ignoring().antMatchers(HttpMethod.GET, "/normas");
         web.ignoring().antMatchers(HttpMethod.GET, "/processo");
         web.ignoring().antMatchers(HttpMethod.POST, "/processo/agendar-etapa-processo");
-        web.ignoring().antMatchers("/ws");
+        /*web.ignoring().antMatchers("/ws");
         web.ignoring().antMatchers("/ws/*");
-        /*web.ignoring().antMatchers("/v2/api-docs/**");
+        web.ignoring().antMatchers("/v2/api-docs/**");
         web.ignoring().antMatchers("/swagger.json");
         web.ignoring().antMatchers("/swagger-ui.html");
         web.ignoring().antMatchers("/swagger-resources/**");

@@ -1,7 +1,4 @@
 C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\config\SwaggerConfig.java
-C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\springsoap\gen\GetProcessoResponse.java
-C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\springsoap\gen\package-info.java
-C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\controller\LegadoSAPSOAPController.java
 C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\model\GetProcessoRequestBuilder.java
 C:\projetos\tcc-pos-puc\back\target\generated-sources\cxf\br\com\sigo\springsoap\gen\package-info.java
 C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\SigoApplication.java
@@ -14,13 +11,11 @@ C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\controller\NormasControll
 C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\controller\AutenticacaoController.java
 C:\projetos\tcc-pos-puc\back\target\generated-sources\cxf\br\com\sigo\springsoap\gen\GetProcessoRequest.java
 C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\config\CorsConfiguration.java
-C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\springsoap\gen\ObjectFactory.java
 C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\model\Processo.java
 C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\producer\KafkaProducer.java
 C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\config\TokenService.java
 C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\config\WebSecurityConfig.java
 C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\consumer\LegadoKafkaConsumer.java
-C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\springsoap\gen\GetProcessoRequest.java
 C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\controller\KafkaController.java
 C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\model\RequestRestProxy.java
 C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\controller\ConsultoriasController.java
@@ -28,5 +23,4 @@ C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\model\TokenDto.java
 C:\projetos\tcc-pos-puc\back\target\generated-sources\cxf\br\com\sigo\springsoap\gen\GetProcessoResponse.java
 C:\projetos\tcc-pos-puc\back\target\generated-sources\cxf\br\com\sigo\springsoap\gen\ObjectFactory.java
 C:\projetos\tcc-pos-puc\back\target\generated-sources\cxf\br\com\sigo\springsoap\gen\ProcessosPort.java
-C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\config\WebServiceConfig.java
 C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\model\Record.java

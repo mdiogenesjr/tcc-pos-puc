@@ -4,10 +4,10 @@ import br.com.sigo.springsoap.gen.GetProcessoRequest;
 
 public class GetProcessoRequestBuilder {
 
-    public GetProcessoRequest getProcessoRequest(String idProcesso, String idEtapa){
+    public GetProcessoRequest getProcessoRequest(){
         GetProcessoRequest request = new GetProcessoRequest();
-        request.setIdProcesso(idProcesso);
-        request.setIdEtapa(idEtapa);
+        request.setIdProcesso("1");
+        request.setIdEtapa("2");
 
         return request;
     }
