@@ -25,7 +25,6 @@ public class ProcessoRotaSOAP extends RouteBuilder {
                         exchange.getIn().setBody(request);
                     }
                 })
-                //.setHeader(CxfConstants.OPERATION_NAME, constant("{{endpoint.operation.celsius.to.fahrenheit}}"))
                 .setHeader(CxfConstants.OPERATION_NAMESPACE, constant("http://www.sigo.com.br/springsoap/gen"))
                 .to("cxf:bean:cxfProcesso")
                 .process(new Processor() {

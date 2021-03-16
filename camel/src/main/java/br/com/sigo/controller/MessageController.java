@@ -52,14 +52,6 @@ public class MessageController {
 		}
 	}
 
-	/**
-	 * GET to produce a message for Kafaka.
-	 * 
-	 * @param request
-	 *            the {@link HttpServletRequest} object.
-	 * @param response
-	 *            the {@link HttpServletResponse} object.
-	 */
 	@RequestMapping(method = RequestMethod.GET)
 	public void get(HttpServletRequest request, HttpServletResponse response) {
 		try {
