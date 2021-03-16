@@ -2,9 +2,10 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { tap } from 'rxjs/operators';
 import { UserService } from '../user/user.service';
+import { GlobalVariable } from 'src/app/global';
 
 
-const API_URL = 'http://localhost:8089';
+const API_URL = GlobalVariable.BASE_API_URL;
 
 @Injectable({
   providedIn: 'root'

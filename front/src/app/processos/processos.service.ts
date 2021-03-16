@@ -2,9 +2,10 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { TokenService } from '../core/token/token.service';
+import { GlobalVariable } from '../global';
 
-const urlProcesso = 'http://localhost:8089/processo';
-const urlProcessoAgendamento = 'http://localhost:8089/processo/agendar-etapa-processo';
+const urlProcesso = GlobalVariable.BASE_API_URL+'/processo';
+const urlProcessoAgendamento = GlobalVariable.BASE_API_URL+'/processo/agendar-etapa-processo';
 
 @Injectable({
   providedIn: 'root'

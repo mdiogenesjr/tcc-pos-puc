@@ -2,8 +2,9 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { TokenService } from '../core/token/token.service';
+import { GlobalVariable } from '../global';
 
-const baseUrl = 'http://localhost:8089/consultorias';
+const baseUrl = GlobalVariable.BASE_API_URL+'/consultorias';
 
 @Injectable({
   providedIn: 'root'
