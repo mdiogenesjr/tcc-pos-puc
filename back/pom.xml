@@ -8,11 +8,11 @@
 		<version>2.3.1.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>net.techtter.spring-kafka-docker</groupId>
-	<artifactId>spring-kafka-docker-int</artifactId>
+	<groupId>br.com.sigo</groupId>
+	<artifactId>sigo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-kafka-docker-int</name>
-	<description>Demo project for Spring Boot Kafka Integration</description>
+	<name>sigo</name>
+	<description>POC do SIGO</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -80,6 +80,11 @@
 		<dependency>
 			<groupId>wsdl4j</groupId>
 			<artifactId>wsdl4j</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-cxf</artifactId>
+			<version>3.8.0</version>
 		</dependency>
 	</dependencies>
 
