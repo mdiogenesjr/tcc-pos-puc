@@ -9,11 +9,11 @@
 		<version>2.3.6.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.rmendes</groupId>
-	<artifactId>camel-soap2rest</artifactId>
+	<groupId>br.com.sigo.camel</groupId>
+	<artifactId>camel</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>camel-soap2rest</name>
-	<description>Apache Camel Simple Soap2Rest convertes</description>
+	<name>camel-poc-sigo</name>
+	<description>Apache Camel POC SIGO</description>
 
 	<properties>
 		<java.version>11</java.version>
