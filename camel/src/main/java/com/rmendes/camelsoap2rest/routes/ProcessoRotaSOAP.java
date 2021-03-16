@@ -20,7 +20,7 @@ public class ProcessoRotaSOAP extends RouteBuilder {
                     @Override
                     public void process(Exchange exchange) throws Exception {
                         GetProcessoRequest request = new GetProcessoRequest();
-                        request.setIdEtapa("1");
+                        request.setIdProcesso("1");
                         request.setIdEtapa("2");
                         exchange.getIn().setBody(request);
                     }

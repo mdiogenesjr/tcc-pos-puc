@@ -1,6 +1,5 @@
 package com.rmendes.camelsoap2rest.routes;
 
-import com.rmendes.camelsoap2rest.bean.KafkaOutputBean;
 import org.apache.camel.builder.RouteBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,7 +19,8 @@ public class KafkaCamelRoute {
 		return new RouteBuilder() {
 			public void configure() {
 				from("kafka:agendar-etapa-processo?brokers=localhost:9092&groupId=my_group_id&autoOffsetReset=earliest&consumersCount=1")
-				.bean(KafkaOutputBean.class, "doWork");
+				.to("direct:processos")
+						.log("${body}");
 			}
 		};
 	}
