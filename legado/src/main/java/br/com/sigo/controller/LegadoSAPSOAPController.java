@@ -1,7 +1,8 @@
 package br.com.sigo.controller;
 
-import br.com.sigo.springsoap.gen.GetProcessoRequest;
-import br.com.sigo.springsoap.gen.GetProcessoResponse;
+
+import br.com.sigo.springsoap.gen.AgendarProcessoRequest;
+import br.com.sigo.springsoap.gen.AgendarProcessoResponse;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
@@ -12,10 +13,10 @@ public class LegadoSAPSOAPController {
 
     private static final String NAMESPACE_URI = "http://www.sigo.com.br/springsoap/gen";
 
-    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getProcessoRequest")
+    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "agendarProcessoRequest")
     @ResponsePayload
-    public GetProcessoResponse getProcesso(@RequestPayload GetProcessoRequest request) {
-        GetProcessoResponse response = new GetProcessoResponse();
+    public AgendarProcessoResponse agendarProcesso(@RequestPayload AgendarProcessoRequest request) {
+        AgendarProcessoResponse response = new AgendarProcessoResponse();
         response.setStatus("Processo " + request.getIdProcesso() + " agendado");
         return response;
     }

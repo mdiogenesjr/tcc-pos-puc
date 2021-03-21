@@ -1,12 +1,12 @@
 C:\projetos\tcc-pos-puc\camel\target\generated-sources\cxf\br\com\sigo\springsoap\gen\ObjectFactory.java
 C:\projetos\tcc-pos-puc\camel\src\main\java\br\com\sigo\controller\MessageController.java
-C:\projetos\tcc-pos-puc\camel\target\generated-sources\cxf\br\com\sigo\springsoap\gen\GetProcessoResponse.java
 C:\projetos\tcc-pos-puc\camel\src\main\java\br\com\sigo\CamelApplication.java
 C:\projetos\tcc-pos-puc\camel\src\main\java\br\com\sigo\routes\ProcessoRotaSOAP.java
+C:\projetos\tcc-pos-puc\camel\target\generated-sources\cxf\br\com\sigo\springsoap\gen\AgendarProcessoResponse.java
 C:\projetos\tcc-pos-puc\camel\src\main\java\br\com\sigo\routes\KafkaCamelRoute.java
+C:\projetos\tcc-pos-puc\camel\target\generated-sources\cxf\br\com\sigo\springsoap\gen\AgendarProcessoRequest.java
 C:\projetos\tcc-pos-puc\camel\src\main\java\br\com\sigo\routes\KafkaRouteProducer.java
 C:\projetos\tcc-pos-puc\camel\target\generated-sources\cxf\br\com\sigo\springsoap\gen\ProcessosPortService.java
-C:\projetos\tcc-pos-puc\camel\target\generated-sources\cxf\br\com\sigo\springsoap\gen\GetProcessoRequest.java
 C:\projetos\tcc-pos-puc\camel\target\generated-sources\cxf\br\com\sigo\springsoap\gen\package-info.java
 C:\projetos\tcc-pos-puc\camel\target\generated-sources\cxf\br\com\sigo\springsoap\gen\ProcessosPort.java
 C:\projetos\tcc-pos-puc\camel\src\main\java\br\com\sigo\model\Notification.java

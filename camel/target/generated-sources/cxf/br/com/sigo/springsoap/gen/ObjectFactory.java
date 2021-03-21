@@ -30,19 +30,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetProcessoRequest }
+     * Create an instance of {@link AgendarProcessoRequest }
      * 
      */
-    public GetProcessoRequest createGetProcessoRequest() {
-        return new GetProcessoRequest();
+    public AgendarProcessoRequest createAgendarProcessoRequest() {
+        return new AgendarProcessoRequest();
     }
 
     /**
-     * Create an instance of {@link GetProcessoResponse }
+     * Create an instance of {@link AgendarProcessoResponse }
      * 
      */
-    public GetProcessoResponse createGetProcessoResponse() {
-        return new GetProcessoResponse();
+    public AgendarProcessoResponse createAgendarProcessoResponse() {
+        return new AgendarProcessoResponse();
     }
 
 }

@@ -2,7 +2,7 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.7 
 // Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2021.03.16 às 04:20:43 PM BRT 
+// Gerado em: 2021.03.21 às 01:47:40 PM BRT 
 //
 
 
@@ -37,19 +37,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetProcessoResponse }
+     * Create an instance of {@link AgendarProcessoResponse }
      * 
      */
-    public GetProcessoResponse createGetProcessoResponse() {
-        return new GetProcessoResponse();
+    public AgendarProcessoResponse createAgendarProcessoResponse() {
+        return new AgendarProcessoResponse();
     }
 
     /**
-     * Create an instance of {@link GetProcessoRequest }
+     * Create an instance of {@link AgendarProcessoRequest }
      * 
      */
-    public GetProcessoRequest createGetProcessoRequest() {
-        return new GetProcessoRequest();
+    public AgendarProcessoRequest createAgendarProcessoRequest() {
+        return new AgendarProcessoRequest();
     }
 
 }

@@ -1,7 +1,8 @@
 package br.com.sigo.routes;
 
-import br.com.sigo.springsoap.gen.GetProcessoRequest;
-import br.com.sigo.springsoap.gen.GetProcessoResponse;
+
+import br.com.sigo.springsoap.gen.AgendarProcessoRequest;
+import br.com.sigo.springsoap.gen.AgendarProcessoResponse;
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
@@ -19,7 +20,7 @@ public class ProcessoRotaSOAP extends RouteBuilder {
                 .process(new Processor() {
                     @Override
                     public void process(Exchange exchange) throws Exception {
-                        GetProcessoRequest request = new GetProcessoRequest();
+                        AgendarProcessoRequest request = new AgendarProcessoRequest();
                         request.setIdProcesso("1");
                         request.setIdEtapa("2");
                         exchange.getIn().setBody(request);
@@ -31,7 +32,7 @@ public class ProcessoRotaSOAP extends RouteBuilder {
                     @Override
                     public void process(Exchange exchange) throws Exception {
                         MessageContentsList response = (MessageContentsList) exchange.getIn().getBody();
-                        GetProcessoResponse r = (GetProcessoResponse) response.get(0);
+                        AgendarProcessoResponse r = (AgendarProcessoResponse) response.get(0);
                         exchange.getIn().setBody("Status: "+r.getStatus());
                     }
                 })
