@@ -1,4 +1,4 @@
-br\com\sigo\CamelSoap2restApplication.class
+br\com\sigo\CamelApplication.class
 br\com\sigo\routes\KafkaCamelRoute$1.class
 br\com\sigo\routes\KafkaCamelRoute.class
 br\com\sigo\springsoap\gen\GetProcessoResponse.class
