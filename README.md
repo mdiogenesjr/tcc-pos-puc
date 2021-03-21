@@ -5,8 +5,8 @@ O objetivo desse trabalho foi elaborar e validar uma proposta arquitetural de Tr
 
 Estrutura de pastas:
 
-A pasta back possui as APIS Webs do Sistema SIGO.
-A pasta front possui as páginas da aplicação.
-A pasta camel possui o API de integração entre o SIGO e Legado.
-A pasta Legado possui um serviço SOAP representando uma interface do legado.
-A pasta Kafka possui os aquivos necessarios para levantar o broker do Kafka via Docker utilizado no projeto.
+- A pasta back possui as APIS Webs do Sistema SIGO.
+- A pasta front possui as páginas da aplicação.
+- A pasta camel possui o API de integração entre o SIGO e Legado.
+- A pasta Legado possui um serviço SOAP representando uma interface do legado.
+- A pasta Kafka possui os aquivos necessarios para levantar o broker do Kafka via Docker utilizado no projeto.
