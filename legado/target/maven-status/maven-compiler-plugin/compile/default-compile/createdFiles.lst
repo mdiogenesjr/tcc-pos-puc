@@ -1,0 +1,7 @@
+br\com\sigo\controller\LegadoSAPSOAPController.class
+br\com\sigo\springsoap\gen\ObjectFactory.class
+br\com\sigo\springsoap\gen\AgendarProcessoRequest.class
+br\com\sigo\config\WebServiceConfig.class
+br\com\sigo\springsoap\gen\package-info.class
+br\com\sigo\SigoLegadoApplication.class
+br\com\sigo\springsoap\gen\AgendarProcessoResponse.class
