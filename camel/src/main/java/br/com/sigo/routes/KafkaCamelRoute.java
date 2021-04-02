@@ -11,12 +11,6 @@ public class KafkaCamelRoute {
 	@Value("${env.host}")
 	private String host;
 
-	@Bean(name = "KafkaRouteProducer")
-	public RouteBuilder kafkaRouteProducer() {
-		return new KafkaRouteProducer(
-				"kafka:agendar-etapa-processo?brokers=localhost:9092");
-	}
-
 
 	@Bean(name = "KafkaRouteConsumer")
 	public RouteBuilder kafkaRouteConsumer() {
