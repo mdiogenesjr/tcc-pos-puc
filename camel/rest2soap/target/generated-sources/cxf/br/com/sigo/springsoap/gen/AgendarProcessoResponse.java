@@ -18,6 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &amp;lt;complexContent&amp;gt;
  *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
  *       &amp;lt;sequence&amp;gt;
+ *         &amp;lt;element name="idStatus" type="{http://www.w3.org/2001/XMLSchema}string"/&amp;gt;
  *         &amp;lt;element name="status" type="{http://www.w3.org/2001/XMLSchema}string"/&amp;gt;
  *       &amp;lt;/sequence&amp;gt;
  *     &amp;lt;/restriction&amp;gt;
@@ -29,13 +30,40 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
+    "idStatus",
     "status"
 })
 @XmlRootElement(name = "agendarProcessoResponse")
 public class AgendarProcessoResponse {
 
     @XmlElement(required = true)
+    protected String idStatus;
+    @XmlElement(required = true)
     protected String status;
+
+    /**
+     * Obtém o valor da propriedade idStatus.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getIdStatus() {
+        return idStatus;
+    }
+
+    /**
+     * Define o valor da propriedade idStatus.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setIdStatus(String value) {
+        this.idStatus = value;
+    }
 
     /**
      * Obtém o valor da propriedade status.

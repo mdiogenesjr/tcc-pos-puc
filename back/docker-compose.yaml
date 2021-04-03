@@ -17,28 +17,25 @@ services:
       - 9092:9092                 # Kafka Broker
   tcc-pos:
     image: mdiogenes001/tcc-pos:0.42
-    container_name: tcc-pos
-    hostname: tcc-pos
+    container_name: sigo-back
     build: .
     ports:
       - 8089:8089
   tcc-pos-angular:
     image: mdiogenes001/tcc-pos-angular:0.23
-    container_name: tcc-pos-front
+    container_name: sigo-front
     build: .
     ports:
       - 80:80
   tcc-pos-legado:
     image: mdiogenes001/tcc-pos-legado:0.7
-    container_name: tcc-pos-legado
-    hostname: tcc-pos-legado
+    container_name: sigo-legado
     build: .
     ports:
       - 8088:8088
   tcc-pos-camel-rest:
     image: mdiogenes001/tcc-pos-camel-rest:0.2
-    container_name: tcc-pos-camel-rest
-    hostname: tcc-pos-camel-rest
+    container_name: sigo-camel-rest
     build: .
     ports:
       - 8080:8080

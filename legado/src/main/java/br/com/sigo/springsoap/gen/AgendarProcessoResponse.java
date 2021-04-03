@@ -2,7 +2,7 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.7 
 // Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2021.03.21 às 02:19:22 PM BRT 
+// Gerado em: 2021.04.03 às 12:50:16 PM BRT 
 //
 
 
@@ -25,6 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
+ *         &lt;element name="idStatus" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="status" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -36,13 +37,40 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
+    "idStatus",
     "status"
 })
 @XmlRootElement(name = "agendarProcessoResponse")
 public class AgendarProcessoResponse {
 
     @XmlElement(required = true)
+    protected String idStatus;
+    @XmlElement(required = true)
     protected String status;
+
+    /**
+     * Obtém o valor da propriedade idStatus.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getIdStatus() {
+        return idStatus;
+    }
+
+    /**
+     * Define o valor da propriedade idStatus.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setIdStatus(String value) {
+        this.idStatus = value;
+    }
 
     /**
      * Obtém o valor da propriedade status.

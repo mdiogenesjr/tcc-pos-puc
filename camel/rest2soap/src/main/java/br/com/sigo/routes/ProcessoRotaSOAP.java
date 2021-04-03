@@ -33,7 +33,10 @@ public class ProcessoRotaSOAP extends RouteBuilder {
                     public void process(Exchange exchange) throws Exception {
                         MessageContentsList response = (MessageContentsList) exchange.getIn().getBody();
                         AgendarProcessoResponse r = (AgendarProcessoResponse) response.get(0);
-                        exchange.getIn().setBody("Status: "+r.getStatus());
+                        exchange.getIn().setBody("{" +
+                                "\"idStatus\": "+r.getIdStatus()+"," +
+                                "\"status\":\" "+r.getStatus()+" \"" +
+                                "}" );
                     }
                 })
                 .to("mock:output");

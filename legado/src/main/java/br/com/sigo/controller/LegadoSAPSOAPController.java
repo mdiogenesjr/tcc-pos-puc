@@ -17,7 +17,8 @@ public class LegadoSAPSOAPController {
     @ResponsePayload
     public AgendarProcessoResponse agendarProcesso(@RequestPayload AgendarProcessoRequest request) {
         AgendarProcessoResponse response = new AgendarProcessoResponse();
-        response.setStatus("Processo " + request.getIdProcesso() + " agendado");
+        response.setIdStatus("12245");
+        response.setStatus("Agendado");
         return response;
     }
 }
