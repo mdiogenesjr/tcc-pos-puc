@@ -24,7 +24,7 @@ services:
       - 8089:8089
   tcc-pos-angular:
     image: mdiogenes001/tcc-pos:0.21
-    container_name: tcc-pos-angular
+    container_name: tcc-pos-front
     hostname: tcc-pos-angular
     build: .
     ports:
