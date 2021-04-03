@@ -1,10 +1,52 @@
 version: '3.4'
 
 services:
+  # this is our kafka cluster.
+  kafka-cluster:
+    image: landoop/fast-data-dev:cp3.3.0
+    environment:
+      ADV_HOST: 127.0.0.1         # Change to 192.168.99.100 if using Docker Toolbox
+      RUNTESTS: 0                 # Disable Running tests so the cluster starts faster
+      FORWARDLOGS: 0              # Disable running 5 file source connectors that bring application logs into Kafka topics
+      SAMPLEDATA: 0               # Do not create sea_vessel_position_reports, nyc_yellow_taxi_trip_data, reddit_posts topics with sample Avro records.
+    ports:
+      - 2181:2181                 # Zookeeper
+      - 3030:3030                 # Landoop UI
+      - 8081-8083:8081-8083       # REST Proxy, Schema Registry, Kafka Connect ports
+      - 9581-9585:9581-9585       # JMX Ports
+      - 9092:9092                 # Kafka Broker
   tcc-pos:
-    image: mdiogenes001/tcc-pos:0.24
+    image: mdiogenes001/tcc-pos:0.41
     container_name: tcc-pos
     hostname: tcc-pos
     build: .
     ports:
       - 8089:8089
+  tcc-pos-angular:
+    image: mdiogenes001/tcc-pos:0.21
+    container_name: tcc-pos-angular
+    hostname: tcc-pos-angular
+    build: .
+    ports:
+      - 80:80
+  tcc-pos-legado:
+    image: mdiogenes001/tcc-pos-legado:0.7
+    container_name: tcc-pos-legado
+    hostname: tcc-pos-legado
+    build: .
+    ports:
+      - 8088:8088
+  tcc-pos-camel:
+    image: mdiogenes001/tcc-pos-camel:0.5
+    container_name: tcc-pos-camel
+    hostname: tcc-pos-camel
+    build: .
+    ports:
+      - 8087:8087
+  tcc-pos-camel-rest:
+    image: mdiogenes001/tcc-pos-camel-rest:0.2
+    container_name: tcc-pos-camel-rest
+    hostname: tcc-pos-camel-rest
+    build: .
+    ports:
+      - 8080:8080
