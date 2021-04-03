@@ -35,13 +35,6 @@ services:
     build: .
     ports:
       - 8088:8088
-  tcc-pos-camel:
-    image: mdiogenes001/tcc-pos-camel:0.5
-    container_name: tcc-pos-camel
-    hostname: tcc-pos-camel
-    build: .
-    ports:
-      - 8087:8087
   tcc-pos-camel-rest:
     image: mdiogenes001/tcc-pos-camel-rest:0.2
     container_name: tcc-pos-camel-rest
