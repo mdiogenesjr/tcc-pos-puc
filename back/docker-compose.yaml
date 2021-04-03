@@ -16,7 +16,7 @@ services:
       - 9581-9585:9581-9585       # JMX Ports
       - 9092:9092                 # Kafka Broker
   tcc-pos:
-    image: mdiogenes001/tcc-pos:0.41
+    image: mdiogenes001/tcc-pos:0.42
     container_name: tcc-pos
     hostname: tcc-pos
     build: .
