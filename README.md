@@ -10,4 +10,4 @@ Estrutura de pastas:
 - A pasta camel possui o API de integração entre o SIGO e Legado.
 - A pasta Legado possui um serviço SOAP representando uma interface do legado.
 - A pasta Kafka possui os aquivos necessarios para levantar o broker do Kafka via Docker utilizado no projeto.
-- A pasta video de apresetação possui o vídeo apresentando a POC, nos formatos avi e mp4.
+- A pasta video de apresetação possui o vídeo apresentando a POC, no formato mp4.
