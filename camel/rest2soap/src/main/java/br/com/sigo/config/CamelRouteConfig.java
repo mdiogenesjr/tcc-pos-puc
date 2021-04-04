@@ -24,13 +24,19 @@ public class CamelRouteConfig extends RouteBuilder {
                 .apiProperty("port", "8080")
                 .apiProperty("schemes", "");
 
-        rest("/processos")
+        rest("/agendar-processos")
                 .get("/agendar-etapa-processo/processo/{idProcesso}/etapa/{idEtapa}")
                 .consumes("text/plain").produces("text/plain")
                 .description("Método para agendar a etapa de um determinado processo")
                 .param().name("idProcesso").type(RestParamType.path).description("Id do Processo").dataType("int").endParam()
                 .param().name("idEtapa").type(RestParamType.path).description("Id da Etapa").dataType("int").endParam()
-                .to("direct:processos");
+                .to("direct:agendar-processos");
+        rest("/consultar-processos")
+                .get("/consultar-etapa-processo/processo/{idAgendamento}")
+                .consumes("text/plain").produces("text/plain")
+                .description("Método para consultar status de um determinado processo")
+                .param().name("idAgendamento").type(RestParamType.path).description("Id do Agendamento").dataType("int").endParam()
+                .to("direct:consultar-processos");
     }
 
     @Controller

@@ -2,6 +2,7 @@ br\com\sigo\config\CamelRouteConfig.class
 br\com\sigo\CamelApplication.class
 br\com\sigo\springsoap\gen\AgendarProcessoResponse.class
 br\com\sigo\springsoap\gen\ProcessosPortService.class
+br\com\sigo\springsoap\gen\ConsultarProcessoRequest.class
 br\com\sigo\config\CamelRouteConfig$SwaggerConfig.class
 br\com\sigo\springsoap\gen\ObjectFactory.class
 br\com\sigo\springsoap\gen\AgendarProcessoRequest.class
@@ -9,6 +10,7 @@ br\com\sigo\config\GsonConfig.class
 br\com\sigo\springsoap\gen\package-info.class
 br\com\sigo\routes\ProcessoRotaSOAP.class
 br\com\sigo\routes\ProcessoRotaSOAP$2.class
+br\com\sigo\springsoap\gen\ConsultarProcessoResponse.class
 br\com\sigo\springsoap\gen\ProcessosPort.class
 br\com\sigo\cxf\CxfBeans.class
 br\com\sigo\routes\ProcessoRotaSOAP$1.class
