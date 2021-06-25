@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tcc-back
+  labels:
+    app: tcc-back
+spec:
+  containers:
+    - name: tcc-back
+      image: mdiogenes001/tcc-pos:0.51
+      ports:
+        - containerPort: 8089

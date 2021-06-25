@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-tcc-legado
+spec:
+  type: ClusterIP
+  selector:
+    app: tcc-legado
+  ports:
+        - port: 8088
+          name: port8088
+

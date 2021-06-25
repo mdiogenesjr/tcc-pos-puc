@@ -21,7 +21,7 @@ camel:
 
 endpoint:
   #wsdl: http://sigo-1877357518.us-east-1.elb.amazonaws.com:8088/ws/processos.wsdl
-  wsdl: http://localhost:8088/ws/processos.wsdl
+  wsdl: http://svc-tcc-legado:8088/ws/processos.wsdl
 
 logging:
   level:

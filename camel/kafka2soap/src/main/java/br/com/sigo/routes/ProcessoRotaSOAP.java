@@ -27,6 +27,7 @@ public class ProcessoRotaSOAP extends RouteBuilder {
                     }
                 })
                 .setHeader(CxfConstants.OPERATION_NAMESPACE, constant("http://www.sigo.com.br/springsoap/gen"))
+                .setHeader(CxfConstants.OPERATION_NAME, constant("agendarProcesso"))
                 .to("cxf:bean:cxfProcesso")
                 .process(new Processor() {
                     @Override

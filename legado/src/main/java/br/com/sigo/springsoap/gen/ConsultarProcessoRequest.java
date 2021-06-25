@@ -2,7 +2,7 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.7 
 // Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2021.04.04 às 06:49:10 PM BRT 
+// Gerado em: 2021.04.04 às 09:49:21 PM BRT 
 //
 
 
@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="idAgendamento" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="idProcesso" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,36 +36,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "idAgendamento"
+    "idProcesso"
 })
 @XmlRootElement(name = "consultarProcessoRequest")
 public class ConsultarProcessoRequest {
 
     @XmlElement(required = true)
-    protected String idAgendamento;
+    protected String idProcesso;
 
     /**
-     * Obtém o valor da propriedade idAgendamento.
+     * Obtém o valor da propriedade idProcesso.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getIdAgendamento() {
-        return idAgendamento;
+    public String getIdProcesso() {
+        return idProcesso;
     }
 
     /**
-     * Define o valor da propriedade idAgendamento.
+     * Define o valor da propriedade idProcesso.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setIdAgendamento(String value) {
-        this.idAgendamento = value;
+    public void setIdProcesso(String value) {
+        this.idProcesso = value;
     }
 
 }

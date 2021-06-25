@@ -21,7 +21,7 @@ public class ConsultarProcessoRoute extends RouteBuilder {
                     @Override
                     public void process(Exchange exchange) throws Exception {
                         ConsultarProcessoRequest request = new ConsultarProcessoRequest();
-                        request.setIdAgendamento(exchange.getIn().getHeader("idAgendamento").toString());
+                        request.setIdProcesso(exchange.getIn().getHeader("idProcesso").toString());
                         exchange.getIn().setBody(request);
                     }
                 })

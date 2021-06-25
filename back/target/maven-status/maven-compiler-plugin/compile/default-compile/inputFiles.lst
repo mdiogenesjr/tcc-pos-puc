@@ -12,6 +12,7 @@ C:\projetos\tcc-pos-puc\back\target\generated-sources\cxf\br\com\sigo\springsoap
 C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\SigoApplication.java
 C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\model\RequestRestProxy.java
 C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\controller\ConsultoriasController.java
+C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\consumer\KafkaConsumer.java
 C:\projetos\tcc-pos-puc\back\src\main\java\br\com\sigo\model\TokenDto.java
 C:\projetos\tcc-pos-puc\back\target\generated-sources\cxf\br\com\sigo\springsoap\gen\GetProcessoResponse.java
 C:\projetos\tcc-pos-puc\back\target\generated-sources\cxf\br\com\sigo\springsoap\gen\ObjectFactory.java

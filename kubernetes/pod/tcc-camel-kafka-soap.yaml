@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tcc-camel-kafka-soap
+  labels:
+    app: tcc-camel-kafka-soap
+spec:
+  containers:
+    - name: tcc-camel-kafka-soap
+      image: mdiogenes001/tcc-pos-camel-kafka:0.9
+      ports:
+        - containerPort: 8087

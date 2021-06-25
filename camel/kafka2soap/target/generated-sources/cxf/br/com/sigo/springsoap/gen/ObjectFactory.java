@@ -45,4 +45,20 @@ public class ObjectFactory {
         return new AgendarProcessoResponse();
     }
 
+    /**
+     * Create an instance of {@link ConsultarProcessoRequest }
+     * 
+     */
+    public ConsultarProcessoRequest createConsultarProcessoRequest() {
+        return new ConsultarProcessoRequest();
+    }
+
+    /**
+     * Create an instance of {@link ConsultarProcessoResponse }
+     * 
+     */
+    public ConsultarProcessoResponse createConsultarProcessoResponse() {
+        return new ConsultarProcessoResponse();
+    }
+
 }

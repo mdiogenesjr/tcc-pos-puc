@@ -25,9 +25,6 @@ public class GestaoController {
     @Autowired
     private TokenService tokenService;
 
-    @Value( "${env.host}" )
-    private String host;
-
     @PostMapping(value = "processo/agendar-etapa-processo")
     public ResponseEntity<String> agendarEtapaProcesso(@RequestBody Processo processo,
                                                        @RequestHeader("Authorization") String token
@@ -73,7 +70,7 @@ public class GestaoController {
     private void publicarNoTopico(Processo processo) throws URISyntaxException {
         RestTemplate restTemplate = new RestTemplate();
 
-        String baseUrl = "http://"+host+":8082/topics/agendar-etapa-processo";
+        String baseUrl = "http://my-confluent-oss-cp-kafka-rest:8082/topics/agendar-etapa-processo";
         URI uri = new URI(baseUrl);
 
         HttpHeaders headers = new HttpHeaders();

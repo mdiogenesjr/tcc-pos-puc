@@ -32,7 +32,7 @@ public class CamelRouteConfig extends RouteBuilder {
                 .param().name("idEtapa").type(RestParamType.path).description("Id da Etapa").dataType("int").endParam()
                 .to("direct:agendar-processos");
         rest("/consultar-processos")
-                .get("/consultar-etapa-processo/processo/{idAgendamento}")
+                .get("/consultar-etapa-processo/processo/{idProcesso}")
                 .consumes("text/plain").produces("text/plain")
                 .description("Método para consultar status de um determinado processo")
                 .param().name("idAgendamento").type(RestParamType.path).description("Id do Agendamento").dataType("int").endParam()

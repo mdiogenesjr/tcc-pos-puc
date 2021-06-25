@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tcc-camel-rest-soap
+  labels:
+    app: tcc-camel-rest-soap
+spec:
+  containers:
+    - name: tcc-camel-rest-soap
+      image: mdiogenes001/tcc-pos-camel-rest:0.11
+      ports:
+        - containerPort: 8080

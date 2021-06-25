@@ -1,4 +1,4 @@
-FROM openjdk:8u171-jdk-alpine3.8
+FROM adoptopenjdk/openjdk11:alpine
 LABEL maintainer="marcosdiogenesjr@gmail.com"
 
 ENV LANG C.UTF-8

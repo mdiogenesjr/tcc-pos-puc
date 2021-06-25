@@ -16,7 +16,7 @@ public class KafkaCamelRoute {
 	public RouteBuilder kafkaRouteConsumer() {
 		return new RouteBuilder() {
 			public void configure() {
-				from("kafka:agendar-etapa-processo?brokers="+host+":9092")
+				from("kafka:agendar-etapa-processo?brokers="+host)
 				.to("direct:processos")
 						.log("${body}");
 			}

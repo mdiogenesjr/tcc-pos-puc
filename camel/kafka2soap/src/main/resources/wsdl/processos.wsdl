@@ -19,6 +19,23 @@
                     </xs:sequence>
                 </xs:complexType>
             </xs:element>
+
+            <xs:element name="consultarProcessoRequest">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="idProcesso" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="consultarProcessoResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="idStatus" type="xs:string"/>
+                        <xs:element name="status" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
         </xs:schema>
     </wsdl:types>
     <wsdl:message name="agendarProcessoResponse">
@@ -29,11 +46,25 @@
         <wsdl:part element="tns:agendarProcessoRequest" name="agendarProcessoRequest">
         </wsdl:part>
     </wsdl:message>
+    <wsdl:message name="consultarProcessoResponse">
+        <wsdl:part element="tns:consultarProcessoResponse" name="consultarProcessoResponse">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="consultarProcessoRequest">
+        <wsdl:part element="tns:consultarProcessoRequest" name="consultarProcessoRequest">
+        </wsdl:part>
+    </wsdl:message>
     <wsdl:portType name="ProcessosPort">
         <wsdl:operation name="agendarProcesso">
             <wsdl:input message="tns:agendarProcessoRequest" name="agendarProcessoRequest">
             </wsdl:input>
             <wsdl:output message="tns:agendarProcessoResponse" name="agendarProcessoResponse">
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="consultarProcesso">
+            <wsdl:input message="tns:consultarProcessoRequest" name="consultarProcessoRequest">
+            </wsdl:input>
+            <wsdl:output message="tns:consultarProcessoResponse" name="consultarProcessoResponse">
             </wsdl:output>
         </wsdl:operation>
     </wsdl:portType>
@@ -45,6 +76,15 @@
                 <soap:body use="literal"/>
             </wsdl:input>
             <wsdl:output name="agendarProcessoResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="consultarProcesso">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="consultarProcessoRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="consultarProcessoResponse">
                 <soap:body use="literal"/>
             </wsdl:output>
         </wsdl:operation>

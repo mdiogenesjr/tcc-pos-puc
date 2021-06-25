@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-tcc-camel-rest-soap
+spec:
+  type: LoadBalancer
+  selector:
+    app: tcc-camel-rest-soap
+  ports:
+        - port: 8080
+          nodePort: 30080
+

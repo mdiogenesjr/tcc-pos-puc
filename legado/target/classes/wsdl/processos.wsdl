@@ -1,56 +1,97 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sch="http://www.sigo.com.br/springsoap/gen" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.sigo.com.br/springsoap/gen" targetNamespace="http://www.sigo.com.br/springsoap/gen">
-  <wsdl:types>
-    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.sigo.com.br/springsoap/gen">
+    <wsdl:types>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.sigo.com.br/springsoap/gen">
 
-    <xs:element name="getProcessoRequest">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="idProcesso" type="xs:string"/>
-				<xs:element name="idEtapa" type="xs:string"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
+            <xs:element name="agendarProcessoRequest">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="idProcesso" type="xs:string"/>
+                        <xs:element name="idEtapa" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
 
-    <xs:element name="getProcessoResponse">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="status" type="xs:string"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
-</xs:schema>
-  </wsdl:types>
-  <wsdl:message name="getProcessoResponse">
-    <wsdl:part element="tns:getProcessoResponse" name="getProcessoResponse">
-    </wsdl:part>
-  </wsdl:message>
-  <wsdl:message name="getProcessoRequest">
-    <wsdl:part element="tns:getProcessoRequest" name="getProcessoRequest">
-    </wsdl:part>
-  </wsdl:message>
-  <wsdl:portType name="ProcessosPort">
-    <wsdl:operation name="getProcesso">
-      <wsdl:input message="tns:getProcessoRequest" name="getProcessoRequest">
-    </wsdl:input>
-      <wsdl:output message="tns:getProcessoResponse" name="getProcessoResponse">
-    </wsdl:output>
-    </wsdl:operation>
-  </wsdl:portType>
-  <wsdl:binding name="ProcessosPortSoap11" type="tns:ProcessosPort">
-    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
-    <wsdl:operation name="getProcesso">
-      <soap:operation soapAction=""/>
-      <wsdl:input name="getProcessoRequest">
-        <soap:body use="literal"/>
-      </wsdl:input>
-      <wsdl:output name="getProcessoResponse">
-        <soap:body use="literal"/>
-      </wsdl:output>
-    </wsdl:operation>
-  </wsdl:binding>
-  <wsdl:service name="ProcessosPortService">
-    <wsdl:port binding="tns:ProcessosPortSoap11" name="ProcessosPortSoap11">
-      <soap:address location="http://localhost:8089/ws"/>
-    </wsdl:port>
-  </wsdl:service>
+            <xs:element name="agendarProcessoResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="idStatus" type="xs:string"/>
+                        <xs:element name="status" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="consultarProcessoRequest">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="idAgendamento" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="consultarProcessoResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="idStatus" type="xs:string"/>
+                        <xs:element name="status" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="agendarProcessoResponse">
+        <wsdl:part element="tns:agendarProcessoResponse" name="agendarProcessoResponse">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="agendarProcessoRequest">
+        <wsdl:part element="tns:agendarProcessoRequest" name="agendarProcessoRequest">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="consultarProcessoResponse">
+        <wsdl:part element="tns:consultarProcessoResponse" name="consultarProcessoResponse">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="consultarProcessoRequest">
+        <wsdl:part element="tns:consultarProcessoRequest" name="consultarProcessoRequest">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:portType name="ProcessosPort">
+        <wsdl:operation name="agendarProcesso">
+            <wsdl:input message="tns:agendarProcessoRequest" name="agendarProcessoRequest">
+            </wsdl:input>
+            <wsdl:output message="tns:agendarProcessoResponse" name="agendarProcessoResponse">
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="consultarProcesso">
+            <wsdl:input message="tns:consultarProcessoRequest" name="consultarProcessoRequest">
+            </wsdl:input>
+            <wsdl:output message="tns:consultarProcessoResponse" name="consultarProcessoResponse">
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="ProcessosPortSoap11" type="tns:ProcessosPort">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="agendarProcesso">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="agendarProcessoRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="agendarProcessoResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="consultarProcesso">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="consultarProcessoRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="consultarProcessoResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="ProcessosPortService">
+        <wsdl:port binding="tns:ProcessosPortSoap11" name="ProcessosPortSoap11">
+            <soap:address location="http://localhost:8088/ws"/>
+        </wsdl:port>
+    </wsdl:service>
 </wsdl:definitions>

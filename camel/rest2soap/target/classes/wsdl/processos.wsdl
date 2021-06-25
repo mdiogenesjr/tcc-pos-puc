@@ -23,7 +23,7 @@
             <xs:element name="consultarProcessoRequest">
                 <xs:complexType>
                     <xs:sequence>
-                        <xs:element name="idAgendamento" type="xs:string"/>
+                        <xs:element name="idProcesso" type="xs:string"/>
                     </xs:sequence>
                 </xs:complexType>
             </xs:element>
